@@ -10,7 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -43,16 +50,21 @@
           </p>
 
           <div class="enroll">
-            <button>Enroll now</button>
+            <a href="#" class="button_enroll">Enroll now</a>
             <div class="watch_us">
               <div class="video_play">
-                <img
-                  src="imgs/unsplash_SJvDxw0azqw.png"
-                  alt="woman in a video"
-                />
-              </div>
+                <div class="playingvideo">
+                  <img
+                    class="img_play"
+                    src="imgs/Screenshot 2023-06-14 154718.png"
+                    alt="woman in a video"
+                  />
 
-              <p class="our_story">Watch our <br />story</p>
+                  <ion-icon class="play_icon" name="play"></ion-icon>
+                </div>
+
+                <p class="our_story">Watch our <br />story</p>
+              </div>
             </div>
           </div>
         </div>
