@@ -107,6 +107,7 @@ body {
   padding: 0 3.8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
 
   .first_side {
     .description {
@@ -191,6 +192,166 @@ body {
           color: #171b26;
         }
       }
+    }
+  }
+
+  .second_side {
+    position: relative;
+    padding-top: 2.4rem;
+    .student {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .experts {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      box-shadow: 10px 0 10px rgb(0, 0, 0, 0.1);
+      width: 215px;
+      border-top-right-radius: 120px;
+      border-bottom-right-radius: 120px;
+      position: absolute;
+      top: 12%;
+      left: -10%;
+
+      .person_container {
+        background-color: #3cc1fe;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        .person {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .number_experts,
+      .number_coures {
+        font-size: 20px;
+        font-weight: 700;
+        color: #646879;
+
+        .mentors,
+        .course {
+          color: inherit;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .book {
+      width: 60px;
+      height: 60px;
+      background-color: #8ad6b8;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 12%;
+      right: 10%;
+    }
+
+    .courses {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.05);
+      width: 136px;
+      padding: 1.3rem;
+      gap: 1.2rem;
+      border-radius: 6px;
+      position: absolute;
+      bottom: 15%;
+      right: 4%;
+      z-index: 999;
+      background-color: #fff;
+
+      .outline_container {
+        background-color: #ff7f6e;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-left: 1.2;
+      }
+
+      .number_coures {
+        font-size: 20px;
+        font-weight: 700;
+        color: #646879;
+
+        .course {
+          color: inherit;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .teaching {
+      width: 60px;
+      height: 60px;
+      background-color: #ffa54e;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 42%;
+      left: -5%;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 9px solid #9179f5;
+      transform: rotate(30deg);
+      position: absolute;
+      top: 2%;
+      left: 36%;
+    }
+
+    .circle {
+      width: 15px;
+      height: 15px;
+      background-color: #9179f5;
+      border-radius: 50%;
+      position: absolute;
+      top: 25%;
+      left: 16%;
+      z-index: 999;
+    }
+
+    .circle_bigger {
+      width: 20px;
+      height: 20px;
+      background-color: #9179f5;
+      border-radius: 50%;
+      position: absolute;
+      top: 6%;
+      right: 27%;
+    }
+
+    .square {
+      width: 15px;
+      height: 15px;
+      background-color: #9179f5;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 65%;
+      left: 2%;
     }
   }
 }
